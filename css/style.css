@@ -1,26 +1,26 @@
 /* Fonts */
 @font-face {
-  font-family: "Roboto";
+  font-family: "Roboto", "Arial", sans-serif;
   font-weight: 400;
-  font-size: normal;
-  src: local(fonts/roboto.woff2),
-  local(fonts/roboto.woff);
+  font-style: normal;
+  src: url(fonts/roboto.woff2),
+  url(fonts/roboto.woff);
 }
 
 @font-face {
-  font-family: "Roboto";
+  font-family: "Roboto", "Arial", sans-serif;
   font-weight: 500;
-  font-size: normal;
-  src: local(fonts/robotomedium.woff2),
-  local(fonts/robotomedium.woff);
+  font-style: normal;
+  src: url(fonts/robotomedium.woff2),
+  url(fonts/robotomedium.woff);
 }
 
 @font-face {
-  font-family: "Roboto";
+  font-family: "Roboto", "Arial", sans-serif;
   font-weight: 700;
-  font-size: normal;
-  src: local(fonts/robotobold.woff2),
-  local(fonts/robotobold.woff);
+  font-style: normal;
+  src: url(fonts/robotobold.woff2),
+  url(fonts/robotobold.woff);
 }
 
 /*Variables*/
@@ -64,21 +64,22 @@
 
 /*Global*/
 .body {
-  min-width: 1157px;
-  margin: 0;
-  padding: 0;
+  width: 1157px;
   font-family: "Roboto";
   font-size: 16px;
   line-height: 24px;
-  font-weight: 400;
+  font-weight: 700;
   color:var(--heading-color);
   text-transform: none;
-  background-color:#FFFFFF;
-  background-repeat: no-repeat;
 }
 
 a {
+  color: var(--heading-color);
   text-decoration: none;
+}
+
+li {
+  list-style: none;
 }
 
 
@@ -94,16 +95,6 @@ img {
 .main-navigation {
   font-weight: 500;
   line-height: 30px;
-  list-style: none;
-}
-
-.site-navigation{
-  list-style: none;
-}
-
-.site-navigation,
-.cart-link {
-  color:var(--heading-color);
 }
 
 /*slider*/
@@ -120,61 +111,55 @@ img {
   color: var(--content-color);
 }
 
-/*slider control*/
-.slider-list {
-  list-style: none;
-}
 
 /*works*/
 .works-list {
-  font-size: 24px;
   line-height: 30px;
-  font-weight: 700;
 }
 .works-item {
-  font-size: 16px;
-  line-height: 24px;
   font-weight: 400;
 }
 
 /*description*/
-.description {
+.description-title {
   font-size: 45px;
   line-height: 45px;
   font-weight: 500;
 }
-.orders-list {
-  font-size: 16px;
-  line-height: 24px;
+
+.description-item {
   font-weight: 400;
 }
-.difinition-list {
+
+.orders {
   font-size: 16px;
   line-height: 24px;
-  font-weight: 700;
-}
-.definition-item {
-  font-size: 45px;
-  line-height: 64px;
-  font-weight: 700;
 }
 
-.definition-item__1 {
+.orders-list {
+  font-weight: 400;
+}
+
+/* пока сделал круг чтобы потом понять как добавить линию красную через css или изображение*/
+.orders-item {
+  list-style: circle;
+}
+
+.acuracy-percent {
+  font-size: 45px;
+  line-height: 64px;
+}
+
+.acuracy-tag {
   font-size: 16px;
   line-height: 18px;
   font-weight: 400;
-}
-
-/*partners*/
-.partners-item {
-  list-style: none;
 }
 
 /*footer*/
 .contacts-title {
   font-size: 18px;
   line-height: 30px;
-  font-weight: 700;
 }
 .contacts-text {
   font-size: 16px;
@@ -185,36 +170,82 @@ img {
 .benefit {
   font-size: 36px;
   line-height: 36px;
-  font-weight: 700;
 }
 .benefit-text {
   font-size: 16px;
   line-height: 22px;
   font-weight: 400;
 }
-.social-list {
-  list-style: none;
-}
 
 /*modal*/
 .modal-description {
   font-size: 45px;
   line-height: 53px;
-  font-weight: 700;
 }
+
+.email,
+.coment,
 .name {
   font-size: 16px;
   line-height: 18px;
-  font-weight: 700;
 }
-.email {
-  font-size: 16px;
-  line-height: 18px;
-  font-weight: 700;
-}
-.coment {
-  font-size: 16px;
-  line-height: 18px;
-  font-weight: 700;
 
+/*buttins*/
+.button,
+.modal-close {
+  border: none;
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 500;
+  color: var(--basic-white);
+  background-color: var(--basic-red);
+}
+
+.button-yellow {
+  background-color: var(--basic-yellow);
+}
+.button-green {
+  background-color: var(--basic-green);
+}
+.social-button {
+  color: #D7373B;
+}
+
+/*добавил для визуального отображения*/
+.social-icon {
+  background-color:var(--basic-social-icon);
+}
+
+
+/*стили поведения при наведении*/
+.button:hover,
+.button:focus {
+  background-color: var(--focus-red);
+}
+
+.button-yellow:hover,
+.button-yellow:focus {
+  background-color: var(--focus-yellow);
+}
+
+.button-green:hover,
+.button-green:focus {
+  background-color: var(--focus-green);
+}
+
+
+.partners-item:hover {
+  opacity: 0.5;
+}
+
+.social-icon:hover {
+  background-color: var(--focus-red);
+}
+
+.main-header-logo:hover {
+  opacity: 0.2;
+}
+
+.cart-link:hover {
+  color: var(--basic-red);
 }
