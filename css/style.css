@@ -191,7 +191,7 @@ img {
   line-height: 18px;
 }
 
-/*buttins*/
+/*buttons*/
 .button,
 .modal-close {
   border: none;
@@ -217,6 +217,9 @@ img {
   background-color:var(--basic-social-icon);
 }
 
+.modal-close{
+  opacity: 30%;
+}
 
 /*стили поведения при наведении*/
 .button:hover,
@@ -249,4 +252,144 @@ img {
 
 .cart-link:hover {
   color: var(--basic-red);
+}
+
+.site-navigation:hover {
+  color: var(--basic-red);
+}
+
+/*пока не знаю как сделать нормальное отображение нужна консультация*/
+.modal-close:hover {
+  background-color: var(--basic-green);
+}
+
+
+
+/* catalog */
+
+/*заголовок*/
+.page-catalog-container {
+  font-weight: 500;
+  font-size: 55px;
+  line-height: 55px;
+}
+
+/*price-block*/
+.catalog-title {
+  background-color: var(--basic-grey);
+}
+
+.page-price {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 30px;
+  color: var(--heading-color);
+}
+
+.price-slider {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  color: var(--content-color);
+}
+
+.price-value {
+  color: var(--content-color);
+}
+
+.gtid-type {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 30px;
+  color: var(--heading-color);
+}
+
+.grid-list {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: var(--content-color);
+}
+.grid-item {
+  color: var(--content-color);
+}
+
+.properties {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 30px;
+  color: var(--heading-color);
+}
+
+.properties-list {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
+  color: var(--content-color);
+}
+
+.properties-item {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: var(--content-color);
+}
+
+/*sort-field*/
+.sort-field {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 30px;
+  color: var(--heading-color);
+}
+
+.field-type {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+}
+
+/*carts*/
+/* пока задний фон карточки на всю ширину */
+.cart-item {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+  color: var(--text-contact-cart);
+  background-color: var(--basic-grey);
+}
+
+.cart-name {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 30px;
+  color: var(--heading-color);
+}
+
+/*pagination-list*/
+
+.paggination-list {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 18px;
+  color: var(--heading-color);
+}
+
+/*стили повидения каталога*/
+.grid-list:hover,
+.properties-list:hover {
+  opacity: 50%;
+}
+
+.field-type:hover,
+.field-direct:hover {
+  opacity: 50%;
+}
+
+.cart-name:hover {
+  color: var(--basic-red);
+}
+
+.paggination-list:hover {
+  background-color: var(--focus-grey);
 }
