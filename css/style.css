@@ -1,0 +1,251 @@
+/* Fonts */
+@font-face {
+  font-family: "Roboto", "Arial", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  src: url(fonts/roboto.woff2),
+  url(fonts/roboto.woff);
+}
+
+@font-face {
+  font-family: "Roboto", "Arial", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  src: url(fonts/robotomedium.woff2),
+  url(fonts/robotomedium.woff);
+}
+
+@font-face {
+  font-family: "Roboto", "Arial", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  src: url(fonts/robotobold.woff2),
+  url(fonts/robotobold.woff);
+}
+
+/*Variables*/
+
+:root {
+  /*logo*/
+  --logo-focus:#A6A6A6;
+  /*text*/
+  --heading-color:#000000;
+  --content-color:#283136;
+  --basic-white:#FFFFFF;
+  --text-contact-cart:#666666;
+  --footer-benefit:#444444;
+
+  /*buttons*/
+  --basic-red:#FB565A;
+  --focus-red:#E74246;
+  --click-red:#D7373B;
+
+  --basic-green:#00CA74;
+  --focus-green:#00BC6C;
+  --click-green:#00AA62;
+
+  --basic-yellow:#EFC849;
+  --focus-yellow:#EAB534;
+  --click-yellow:#E5A722;
+
+  /*button and bckgrnd slider*/
+  --basic-grey:#EEEEEE;
+  --focus-grey:#DFDFDF;
+  --click-grey:#D5D5D5;
+
+  /*social*/
+  --basic-social-icon:#E1E1E1;
+  --focus-social-icon:#E74246;
+  --click-social-icon:#D7373B;
+
+  /*catalog cart head*/
+  --catalog-cart-head:#4D4D4D;
+}
+
+/*Global*/
+.body {
+  width: 1157px;
+  font-family: "Roboto";
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 700;
+  color:var(--heading-color);
+  text-transform: none;
+}
+
+a {
+  color: var(--heading-color);
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/*Main navigation*/
+.main-header {
+  background-color:var(--basic-grey);
+}
+.main-navigation {
+  font-weight: 500;
+  line-height: 30px;
+}
+
+/*slider*/
+/*slides*/
+.features {
+  background-color: var(--basic-grey);
+}
+.list-title {
+  font-size: 55px;
+  line-height: 55px;
+  font-weight: 500;
+}
+.list-discription {
+  color: var(--content-color);
+}
+
+
+/*works*/
+.works-list {
+  line-height: 30px;
+}
+.works-item {
+  font-weight: 400;
+}
+
+/*description*/
+.description-title {
+  font-size: 45px;
+  line-height: 45px;
+  font-weight: 500;
+}
+
+.description-item {
+  font-weight: 400;
+}
+
+.orders {
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.orders-list {
+  font-weight: 400;
+}
+
+/* пока сделал круг чтобы потом понять как добавить линию красную через css или изображение*/
+.orders-item {
+  list-style: circle;
+}
+
+.acuracy-percent {
+  font-size: 45px;
+  line-height: 64px;
+}
+
+.acuracy-tag {
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 400;
+}
+
+/*footer*/
+.contacts-title {
+  font-size: 18px;
+  line-height: 30px;
+}
+.contacts-text {
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 400;
+}
+
+.benefit {
+  font-size: 36px;
+  line-height: 36px;
+}
+.benefit-text {
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: 400;
+}
+
+/*modal*/
+.modal-description {
+  font-size: 45px;
+  line-height: 53px;
+}
+
+.email,
+.coment,
+.name {
+  font-size: 16px;
+  line-height: 18px;
+}
+
+/*buttins*/
+.button,
+.modal-close {
+  border: none;
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 500;
+  color: var(--basic-white);
+  background-color: var(--basic-red);
+}
+
+.button-yellow {
+  background-color: var(--basic-yellow);
+}
+.button-green {
+  background-color: var(--basic-green);
+}
+.social-button {
+  color: #D7373B;
+}
+
+/*добавил для визуального отображения*/
+.social-icon {
+  background-color:var(--basic-social-icon);
+}
+
+
+/*стили поведения при наведении*/
+.button:hover,
+.button:focus {
+  background-color: var(--focus-red);
+}
+
+.button-yellow:hover,
+.button-yellow:focus {
+  background-color: var(--focus-yellow);
+}
+
+.button-green:hover,
+.button-green:focus {
+  background-color: var(--focus-green);
+}
+
+
+.partners-item:hover {
+  opacity: 0.5;
+}
+
+.social-icon:hover {
+  background-color: var(--focus-red);
+}
+
+.main-header-logo:hover {
+  opacity: 0.2;
+}
+
+.cart-link:hover {
+  color: var(--basic-red);
+}
