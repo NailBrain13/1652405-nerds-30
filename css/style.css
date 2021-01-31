@@ -1,26 +1,27 @@
 /* Fonts */
+
 @font-face {
-  font-family: "Roboto", "Arial", sans-serif;
+  font-family: "Roboto";
+  src: url("../fonts/roboto.woff2") format("woff2"),
+    url("../fonts/roboto.woff") format("woff");
   font-weight: 400;
   font-style: normal;
-  src: url(fonts/roboto.woff2),
-  url(fonts/roboto.woff);
 }
 
 @font-face {
-  font-family: "Roboto", "Arial", sans-serif;
+  font-family: "Roboto";
+  src: url("../fonts/robotomedium.woff2") format("woff2"),
+    url("../fonts/robotomedium.woff") format("woff");
   font-weight: 500;
   font-style: normal;
-  src: url(fonts/robotomedium.woff2),
-  url(fonts/robotomedium.woff);
 }
 
 @font-face {
-  font-family: "Roboto", "Arial", sans-serif;
+  font-family: "Roboto";
+  src: url("../fonts/robotobold.woff2") format("woff2"),
+    url("../fonts/robotobold.woff") format("woff");
   font-weight: 700;
   font-style: normal;
-  src: url(fonts/robotobold.woff2),
-  url(fonts/robotobold.woff);
 }
 
 /*Variables*/
@@ -63,9 +64,9 @@
 }
 
 /*Global*/
-.body {
+body {
   width: 1157px;
-  font-family: "Roboto";
+  font-family: "Roboto", "Arial", sans-serif;
   font-size: 16px;
   line-height: 24px;
   font-weight: 700;

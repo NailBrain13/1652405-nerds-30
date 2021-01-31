@@ -4,23 +4,25 @@
 <head>
   <meta charset="UTF-8" />
   <title>Каталог</title>
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
   <link rel="icon" href="favicon.ico">
 </head>
 
-<body>
+<body class="page-body">
   <!--Шапка страницы начало-->
-  <header>
-    <nav>
-      <a href="index.html">
-        <img src="img/nerds-logo.png" alt="Нёрдс" />
+  <header class="main-header">
+    <nav class="main-navigation">
+      <a class="main-header-logo" href="index.html">
+        <img src="img/nerds-logo.png" alt="logo" />
       </a>
-      <ul>
+      <ul class="site-navigation">
         <li><a href="index.html">Студия</a></li>
         <li><a href="#">Клиенты</a></li>
         <li><a>Магазин</a></li>
         <li><a href="#">Контакты</a></li>
       </ul>
-      <a href="#">Корзина</a>
+      <a class="cart-link" href="#">Корзина</a>
     </nav>
   </header>
   <!--Шапка страницы конец-->
@@ -173,61 +175,61 @@
   <!--Главный контент-->
 
   <!--Футер-->
-  <footer>
-    <section>
+  <footer class="main-footer">
+    <section class="contacts">
       <h2>Как добраться</h2>
-      <p>NERDS DESIGN STUDIO</p>
-      <p>
+      <p class="contacts-title">NЁRDS DESIGN STUDIO</p>
+      <p class="contacts-text">
         191186,Санкт-Петербург,<br />
         ул. Б. Конюшенная,д. 19/8<br />
         <br />
         тел. +7(812)275-75-75
       </p>
-      <a href="#">НАПИШИТЕ НАМ</a>
+      <a class="button" href="#">НАПИШИТЕ НАМ</a>
       <!-- Здесь будет карта если она интерактивная или сделать фон с изображением карты и маркера-->
-      <img src="img/map/map.png" width="800" height="200" alt="карта" />
+      <img src="img/map/map.png" width="auto" height="200" alt="карта" />
       <img src="img/map/map-marker.png" width="231" height="190" alt="маркер" />
     </section>
-    <section>
+    <section class="footer-social">
       <h2>Соц. сети</h2>
-      <ul>
+      <ul class="social-list">
         <li>
-          <a href="#">Вконтакте</a>
+          <a class="social-item" href="#!"><img class="social-icon" src="img/social/vk-icon.svg">Вконтакте</a>
         </li>
         <li>
-          <a href="#">Фейсбук</a>
+          <a class="social-item" href="#!"><img class="social-icon" src="img/social/fb-icon.svg">Фейсбук</a>
         </li>
         <li>
-          <a href="#">Инстаграм</a>
+          <a class="social-item" href="#!"><img class="social-icon" src="img/social/insta-icon.svg">Инстаграм</a>
         </li>
       </ul>
     </section>
-    <section>
+    <section class="benefit">
       <h2>Давайте дружить, это выгодно!</h2>
-      <p>Скидка 10% для друзей из социальных сетей.</p>
+      <p class="benefit-text">Скидка 10% для друзей из социальных сетей.</p>
     </section>
   </footer>
   <!--Скрытые части-->
-  <section>
+  <section class="modal">
     <h2>Форма обратной связи</h2>
-    <p>Напишите нам</p>
-    <form action="#" method="post">
+    <p class="modal-description">Напишите нам</p>
+    <form class="feedback-form" action="#" method="post">
       <p>
-        <label for="name-name">Ваше имя:</label>
+        <label class="name" for="name-name">Ваше имя:</label>
         <input id="name-name" type="text" name="name" placeholder="Имя Фамилия" />
       </p>
       <p>
-        <label for="name-email">Ваш email:</label>
+        <label class="email" for="name-email">Ваш email:</label>
         <input id="name-email" type="email" name="email" placeholder="email@example.com" />
       </p>
       <p>
-        <label for="coment-coment">Текст письма:
+        <label class="coment" for="coment-coment">Текст письма:
           <textarea id="coment-coment" name="coment" placeholder="В свободной форме"></textarea>
         </label>
       </p>
-      <button type="submit">Отправить</button>
+      <button class="button" type="submit">Отправить</button>
     </form>
-    <button type="button">Закрыть</button>
+    <button class="modal-close" type="button">Закрыть</button>
   </section>
 </body>
 
