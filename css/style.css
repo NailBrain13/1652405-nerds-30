@@ -287,6 +287,8 @@ img {
 }
 
 .price-slider {
+  font-weight: 400;
+  font-size: 16px;
   line-height: 22px;
   color: var(--content-color);
 }
@@ -303,6 +305,8 @@ img {
 }
 
 .grid-list {
+  font-weight: 400;
+  font-size: 16px;
   line-height: 19px;
   color: var(--content-color);
 }
@@ -319,11 +323,14 @@ img {
 
 .properties-list {
   font-weight: 700;
+  font-size: 16px;
   line-height: 19px;
   color: var(--content-color);
 }
 
 .properties-item {
+  font-weight: 400;
+  font-size: 16px;
   line-height: 19px;
   color: var(--content-color);
 }
@@ -337,6 +344,7 @@ img {
 }
 
 .field-type {
+  font-weight: 400;
   font-size: 14px;
   line-height: 18px;
 }
@@ -344,6 +352,8 @@ img {
 /*carts*/
 /* пока задний фон карточки на всю ширину */
 .cart-item {
+  font-weight: 400;
+  font-size: 16px;
   line-height: 18px;
   color: var(--text-contact-cart);
   background-color: var(--basic-grey);
@@ -360,6 +370,7 @@ img {
 
 .paggination-list {
   font-weight: 500;
+  font-size: 16px;
   line-height: 18px;
   color: var(--heading-color);
 }
