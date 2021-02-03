@@ -65,13 +65,20 @@
 
 /*Global*/
 body {
-  width: 1157px;
+  min-width: 1157px;
+  margin: 0;
+  padding: 0;
   font-family: "Roboto", "Arial", sans-serif;
   font-size: 16px;
   line-height: 24px;
   font-weight: 700;
   color:var(--heading-color);
   text-transform: none;
+
+  min-height: 100%;
+  display: grid;
+  grid-template-rows: min-content 1fr min-content;
+  align-content: start;
 }
 
 a {
@@ -94,12 +101,25 @@ img {
   background-color:var(--basic-grey);
 }
 .main-navigation {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-items: center;
+  width: 1157px;
   font-weight: 500;
   line-height: 30px;
 }
+.site-navigation {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr ;
+}
+
+/*container*/
+.container {
+  max-width: 1157px;
+  margin:0 auto;
+}
 
 /*slider*/
-/*slides*/
 .features {
   background-color: var(--basic-grey);
 }
@@ -112,9 +132,10 @@ img {
   color: var(--content-color);
 }
 
-
 /*works*/
 .works-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
   line-height: 30px;
 }
 .works-item {
@@ -140,13 +161,25 @@ img {
 .orders-list {
   font-weight: 400;
 }
+.description-content {
+  display: grid;
+  grid-template-columns:1fr 1fr;
+}
+.description-grid-first {
+  display: grid;
+  grid-template-rows: auto;
+}
+.description-grid-second {
+  display: grid;
+  grid-template-rows: auto;
+}
 
 /* пока сделал круг чтобы потом понять как добавить линию красную через css или изображение*/
 .orders-item {
   list-style: circle;
 }
 
-.acuracy-percent {
+.acuracy {
   font-size: 45px;
   line-height: 64px;
 }
@@ -155,6 +188,15 @@ img {
   font-size: 16px;
   line-height: 18px;
   font-weight: 400;
+}
+.acuracy-tag,
+.acuracy-percent {
+  display: inline;
+}
+/*partners*/
+.partners-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 
 /*footer*/
@@ -168,6 +210,21 @@ img {
   font-weight: 400;
 }
 
+.contacts-form {
+  width: 319px;
+  height: 208px;
+  position: relative;
+  top: 252px;
+  left: 140px;
+  background-color: white;
+}
+
+.map-marker{
+  position: relative;
+  left: 780px;
+  top: -320px;
+}
+
 .benefit {
   font-size: 36px;
   line-height: 36px;
@@ -176,6 +233,10 @@ img {
   font-size: 16px;
   line-height: 22px;
   font-weight: 400;
+}
+.footer-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
 }
 
 /*modal*/
@@ -237,9 +298,8 @@ img {
   background-color: var(--focus-green);
 }
 
-
 .partners-item:hover {
-  opacity: 0.5;
+  opacity: 20%;
 }
 
 .social-icon:hover {
@@ -393,3 +453,5 @@ img {
 .paggination-list:hover {
   background-color: var(--focus-grey);
 }
+
+

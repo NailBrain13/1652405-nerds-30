@@ -24,17 +24,18 @@
       </ul>
       <a class="cart-link" href="#"><img src="img/cart-icon.svg" alt="Корзина">Корзина</a>
     </nav>
+
   </header>
   <!--Шапка страницы конец-->
 
   <!--Разметка главного контента начало-->
-  <main class="container">
+  <main class="main-content">
     <h1>Дизайн-студия Нёрдс</h1>
     <!--Первый блок со слайдером-->
     <section class="features">
       <h2>Преимушества</h2>
       <!--Слайды-->
-      <ul class="features-list">
+      <ul class="features-list container">
         <li class="features-item">
           <p class="list-title">Долго,дорого,скурпулезно</p>
           <p class="list-discription">
@@ -69,7 +70,7 @@
       <!--Слайды-->
 
       <!--Слайдер-->
-      <div class="slider">
+      <div class="slider container">
         <ul class="slider-list">
           <li class="slider-item"><a href="#!">ø</a></li>
           <li class="slider-item"><a href="#!">ø</a></li>
@@ -79,7 +80,7 @@
       <!--Слайдер-->
     </section>
     <!--Первый блок со слайдером-->
-
+<div class="container">
     <!--Второй блок с примерами работ-->
     <section class="works">
       <h2>Примеры услуг</h2>
@@ -115,29 +116,35 @@
     <!--Третий блок описание студии-->
     <section class="description">
       <h2>Описание студии</h2>
-      <p class="description-title">Мы-маленькая, но гордая дизайн-студия из Краснодара.</p>
-      <p class="description-item">
-        Исповедуем принципы минимализма и чистоты.Ставим математический расчет
-        превыше креатива.Работаем не покладая рук как роботы.
-      </p>
-      <p class="orders">ВЫПОЛНЯЕМ ЗАКАЗЫ НА РАЗРАБОТКУ</p>
-      <ul class="orders-list">
-        <li class="orders-item">Веб-сайтов любой сложности</li>
-        <li class="orders-item">Мобильные приложения для iOS и Android</li>
-        <li class="orders-item">Слайдшоу для корпоративных презентаций</li>
-      </ul>
-      <img src="img/nerds-illustration.jpg" width="360" height="208" alt="Илюстрация" />
-      <p class="acuracy">С 2004 года любим точность во всем:</p>
-      <ul >
-        <li class="acuracy-percent">146%</li>
-        <li class="acuracy-percent">100%</li>
-        <li class="acuracy-percent">50%</li>
-      </ul>
-      <ul >
-        <li class="acuracy-tag">Уровень самоотдачи</li>
-        <li class="acuracy-tag">Соблюдение сроков</li>
-        <li class="acuracy-tag">Минимальная предоплата</li>
-      </ul>
+      <div class="description-content">
+        <div class="description-grid-first">
+          <p class="description-title">Мы-маленькая, но гордая дизайн-студия из Краснодара.</p>
+          <p class="description-item">
+            Исповедуем принципы минимализма и чистоты.Ставим математический расчет
+            превыше креатива.Работаем не покладая рук как роботы.
+          </p>
+          <p class="orders">ВЫПОЛНЯЕМ ЗАКАЗЫ НА РАЗРАБОТКУ</p>
+          <ul class="orders-list">
+            <li class="orders-item">Веб-сайтов любой сложности</li>
+            <li class="orders-item">Мобильные приложения для iOS и Android</li>
+            <li class="orders-item">Слайдшоу для корпоративных презентаций</li>
+          </ul>
+        </div>
+        <div class="description-grid-second">
+          <img src="img/nerds-illustration.jpg" width="360" height="208" alt="Илюстрация" />
+          <p class="acuracy">С 2004 года любим точность во всем:</p>
+          <ul>
+            <li class="acuracy-percent">146%</li>
+            <li class="acuracy-percent">100%</li>
+            <li class="acuracy-percent">50%</li>
+          </ul>
+          <ul>
+            <li class="acuracy-tag">Уровень самоотдачи</li>
+            <li class="acuracy-tag">Соблюдение сроков</li>
+            <li class="acuracy-tag">Минимальная предоплата</li>
+          </ul>
+        </div>
+      </div>
     </section>
     <!--Третий блок описание студии-->
 
@@ -162,12 +169,14 @@
       </ul>
     </section>
     <!--Четвертый блок с логотипами-->
+  </div>
   </main>
   <!--Разметка главного контента конец-->
 
   <!--Футер-->
   <footer class="main-footer">
     <section class="contacts">
+    <div class="contacts-form">
       <h2>Как добраться</h2>
       <p class="contacts-title">NЁRDS DESIGN STUDIO</p>
       <p class="contacts-text">
@@ -177,28 +186,36 @@
         тел. +7(812)275-75-75
       </p>
       <a class="button" href="#">НАПИШИТЕ НАМ</a>
+    </div>
       <!-- Здесь будет карта если она интерактивная или сделать фон с изображением карты и маркера-->
-      <img src="img/map/map.png" width="auto" height="200" alt="карта" />
+      <img src="img/map/map.png" width="1440" height="200" alt="карта" />
+      <div class="map-marker">
       <img src="img/map/map-marker.png" width="231" height="190" alt="маркер" />
+    </div>
     </section>
-    <section class="footer-social">
-      <h2>Соц. сети</h2>
-      <ul class="social-list">
-        <li>
-          <a class="social-item" href="#!"><img class="social-icon" src="img/social/vk-icon.svg" alt="Вконтакте">Вконтакте</a>
-        </li>
-        <li>
-          <a class="social-item" href="#!"><img class="social-icon" src="img/social/fb-icon.svg" alt="Фейсбук">Фейсбук</a>
-        </li>
-        <li>
-          <a class="social-item" href="#!"><img class="social-icon" src="img/social/insta-icon.svg" alt="Инстаграм">Инстаграм</a>
-        </li>
-      </ul>
-    </section>
-    <section class="benefit">
-      <h2>Давайте дружить, это выгодно!</h2>
-      <p class="benefit-text">Скидка 10% для друзей из социальных сетей.</p>
-    </section>
+    <div class="footer-grid container">
+      <section class="footer-social">
+        <h2>Соц. сети</h2>
+        <ul class="social-list">
+          <li>
+            <a class="social-item" href="#!"><img class="social-icon" src="img/social/vk-icon.svg"
+                alt="Вконтакте">Вконтакте</a>
+          </li>
+          <li>
+            <a class="social-item" href="#!"><img class="social-icon" src="img/social/fb-icon.svg"
+                alt="Фейсбук">Фейсбук</a>
+          </li>
+          <li>
+            <a class="social-item" href="#!"><img class="social-icon" src="img/social/insta-icon.svg"
+                alt="Инстаграм">Инстаграм</a>
+          </li>
+        </ul>
+      </section>
+      <section class="benefit">
+        <h2>Давайте дружить, это выгодно!</h2>
+        <p class="benefit-text">Скидка 10% для друзей из социальных сетей.</p>
+      </section>
+    </div>
   </footer>
   <!--Скрытые части-->
   <section class="modal">
