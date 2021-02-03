@@ -107,10 +107,12 @@ img {
   width: 1157px;
   font-weight: 500;
   line-height: 30px;
+  outline:5px solid green;
 }
 .site-navigation {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr ;
+  outline:5px solid red;
 }
 
 /*container*/
@@ -122,6 +124,7 @@ img {
 /*slider*/
 .features {
   background-color: var(--basic-grey);
+  outline:5px solid yellowgreen;
 }
 .list-title {
   font-size: 55px;
@@ -137,6 +140,7 @@ img {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   line-height: 30px;
+  outline:5px solid lightblue;
 }
 .works-item {
   font-weight: 400;
@@ -164,10 +168,12 @@ img {
 .description-content {
   display: grid;
   grid-template-columns:1fr 1fr;
+  outline:5px solid lime;
 }
 .description-grid-first {
   display: grid;
   grid-template-rows: auto;
+  outline:5px solid lime;
 }
 .description-grid-second {
   display: grid;
@@ -197,6 +203,7 @@ img {
 .partners-list {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
+  outline:5px solid orange;
 }
 
 /*footer*/
@@ -237,6 +244,7 @@ img {
 .footer-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
+  outline:5px solid darkblue;
 }
 
 /*modal*/
