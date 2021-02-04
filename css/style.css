@@ -360,14 +360,19 @@ img {
 
 /*заголовок*/
 .page-catalog-container {
+  display: grid;
+  grid-template-rows: min-content;
+  max-width: 1157px;
   font-weight: 500;
   font-size: 55px;
   line-height: 55px;
+  outline: 5px solid #E74246;
 }
 
 /*price-block*/
 .catalog-title {
   display: grid;
+  width: 1157px;
   grid-template-rows: 1fr;
   justify-content: center;
   background-color: var(--basic-grey);
@@ -379,15 +384,15 @@ img {
   font-weight: 700;
   line-height: 30px;
   color: var(--heading-color);
+  width: 260px;
   margin: 10px 10px;
-  outline: 5px solid #00CA74;
 }
 
 .page-price-grid {
-  width: 500px;
   display: grid;
-  grid-template-rows: auto;
-  outline: 5px solid rgb(139, 0, 46);
+  grid-template-rows: 1fr;
+  width: 260px;
+  outline: 5px solid #00CA74;
 }
 
 .price-slider {
@@ -456,11 +461,20 @@ img {
 
 .sort-field-grid {
   display: grid;
+  width: 760px;
+  height: 200px;
   margin: 20px 20px;
   grid-template-columns: min-content 1fr 1fr 1fr auto;
   outline: 5px solid rgb(0, 107, 139);
 }
 
+.price-filter-grid {
+  display: grid;
+  width: 1157px;
+  margin: 20px 20px;
+  grid-template-columns: min-content max-content min-content;
+  outline: 5px solid #EAB534;
+}
 /*carts*/
 /* пока задний фон карточки на всю ширину */
 .cart-item {
@@ -479,10 +493,11 @@ img {
 }
 
 .carts-grid {
+  order: 3;
   display: grid;
+  width: 700px;
   margin: 20px 20px;
   grid-template-rows: auto;
-  grid-template-columns: auto;
   outline: 5px solid rgb(189, 52, 10);
 }
 
