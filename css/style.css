@@ -200,6 +200,10 @@ img {
   display: inline;
 }
 /*partners*/
+.partners-item {
+  opacity: 0.2;
+}
+
 .partners-list {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -283,14 +287,21 @@ img {
 
 /*добавил для визуального отображения*/
 .social-icon {
+  width: 50px;
+  height: 50px;
   background-color:var(--basic-social-icon);
 }
 
 .modal-close{
-  opacity: 30%;
+  opacity: 0.3;
 }
 
 /*стили поведения при наведении*/
+.site-navigation-link:hover {
+  color: var(--basic-red);
+  text-decoration: underline;
+}
+
 .button:hover,
 .button:focus {
   background-color: var(--focus-red);
@@ -307,7 +318,7 @@ img {
 }
 
 .partners-item:hover {
-  opacity: 20%;
+  opacity: 1;
 }
 
 .social-icon:hover {
@@ -326,9 +337,8 @@ img {
   color: var(--basic-red);
 }
 
-/*пока не знаю как сделать нормальное отображение нужна консультация*/
 .modal-close:hover {
-  background-color: var(--basic-green);
+  opacity: 1;
 }
 
 
