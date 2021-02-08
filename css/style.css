@@ -102,9 +102,8 @@ img {
 }
 
 .main-navigation {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  justify-items: center;
+  display: inline-flex;
+  justify-content: space-between;
   width: 1157px;
   font-weight: 500;
   line-height: 30px;
@@ -112,8 +111,10 @@ img {
 }
 
 .site-navigation {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+  width: 437px;
+  display: inline-flex;
+  justify-content: space-between;
+  padding-left: 0;
   outline: 5px solid red;
 }
 
@@ -139,15 +140,21 @@ img {
   color: var(--content-color);
 }
 
+.features-item {
+  width: 1157px;
+}
+
 /*works*/
 .works-list {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  display: flex;
+  gap: 100px;
+  padding-left: 0;
   line-height: 30px;
   outline: 5px solid lightblue;
 }
 
 .works-item {
+  min-width: 300px;
   font-weight: 400;
 }
 
@@ -174,7 +181,7 @@ img {
 .description-content {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  outline: 5px solid lime;
+  outline: 5px solid rgb(229, 255, 0);
 }
 
 .description-grid-first {
@@ -211,12 +218,15 @@ img {
 
 /*partners*/
 .partners-item {
+  display: inline-block;
+  align-self: center;
+  width: 298px;
   opacity: 0.2;
 }
 
 .partners-list {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+  display: flex;
+  justify-content: space-between;
   outline: 5px solid orange;
 }
 
@@ -259,12 +269,16 @@ img {
 }
 
 .footer-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+  display: flex;
+  justify-content: flex-end;
+  gap: 139px;
   outline: 5px solid darkblue;
 }
 
 /*modal*/
+.modal {
+  border: 10px solid red;
+}
 .modal-description {
   font-size: 45px;
   line-height: 53px;
@@ -301,6 +315,16 @@ img {
 }
 
 /*добавил для визуального отображения*/
+.footer-social {
+  width: 260px;
+  outline: 5px solid pink;
+}
+
+.social-list {
+  justify-content: space-between;
+  display: inline-flex;
+}
+
 .social-icon {
   width: 50px;
   height: 50px;
@@ -475,6 +499,7 @@ img {
   grid-template-columns: min-content max-content min-content;
   outline: 5px solid #EAB534;
 }
+
 /*carts*/
 /* пока задний фон карточки на всю ширину */
 .cart-item {
@@ -497,8 +522,14 @@ img {
   display: grid;
   width: 700px;
   margin: 20px 20px;
-  grid-template-rows: auto;
+  grid-template-columns: auto;
   outline: 5px solid rgb(189, 52, 10);
+}
+
+.grid-cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  outline: 5px solid #FB565A;
 }
 
 /*pagination-list*/
