@@ -1,0 +1,152 @@
+/*root*/
+:root {
+  --background-basic:#EEEEEE;
+  /*text*/
+  --title-text-color:#000000;
+  --main-text-color:#283136;
+  /*modal-label*/
+  --modal-form-grey:#444444;
+  /*buttons*/
+  --nav-color-static:#000000;
+  --nav-color-hoveer:#FB565A;
+  --button-color-stacic:#FB565A;
+  --button-color-hover:#E74246;
+  --button-color-click:#D7373B;
+  --button-green-stacic:#00CA74;
+  --button-green-hover:#00BC6C;
+  --button-green-click:#00AA62;
+  --button-yellow-static:#EFC849;
+  --button-yellow-hover:#EAB534;
+  --button-yellow-click:#E5A722;
+  /*button grey and paggintion*/
+  --button-grey-hover:#DFDFDF;
+  --button-grey-click:#D5D5D5;
+  /*radio & checkbox*/
+  --basic-check-radio:#283136;
+}
+
+.main-index {
+  font-weight: 700; /* 9повторений */
+}
+
+/*index.html*/
+/*nav*/
+.nav {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 30px;
+}
+
+/*sliderd block*/
+.slider-titel {
+  font-weight: 500;
+  font-size: 55px;
+  line-height: 55px;
+}
+.slider-text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+}
+.button {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 18px;
+}
+
+/* works*/
+.works-title {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 30px;
+}
+.button {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 18px;
+}
+
+/*slogan-block*/
+.slogan-title {
+  font-weight: 500;
+  font-size: 45px;
+  line-height: 45px;
+}
+.slogan-text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.slogan-works-title {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+}
+.sllogan-works-list {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+}
+.achievments-title {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+}
+.achivments-percent {
+  font-weight: 700;
+  font-size: 45px;
+  line-height: 65px;
+}
+.percent {
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 40px;
+}
+.achievments-text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+}
+
+/*contacts us*/
+.contacts-title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 30px;
+}
+
+.conatcts-text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+}
+
+/*benefits*/
+.benefits-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 36px;
+}
+.benefits-text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+}
+
+/*modal*/
+.modal-title {
+  font-weight: 700;
+  font-size: 45px;
+  line-height: 53px;
+}
+.fields-title {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 18px;
+}
+.field-text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+}
