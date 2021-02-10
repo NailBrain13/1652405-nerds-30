@@ -79,13 +79,18 @@ img {
   height: auto;
 }
 .button {
-  width: 200px;
-  height: 50px;
+  padding: 16px 54px;
+  font: inherit;
+  text-align: center;
   color:#FFF;
+  vertical-align: center;
   background-color: var(--button-color-stacic);
+  border: none;
+  border-radius: 3px;
 }
 .button:hover,
 .button:focus {
+  cursor: pointer;
   background-color: var(--button-color-hover);
 }
 
@@ -107,13 +112,18 @@ img {
 .main-header-logo:focus {
   opacity: 0.7;
 }
-
 .site-navigation a:hover,
 .site-navigation a:focus,
 .cart-link:hover,
 .cart-link:focus {
   color: var(--nav-color-hoveer);
   border-bottom: 2px solid var(--nav-color-hoveer);
+}
+.cart-link {
+  position: relative;
+}
+.cart-link::before {
+  content: "";
 }
 
 
