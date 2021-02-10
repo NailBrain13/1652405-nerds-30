@@ -1,4 +1,29 @@
-/*root*/
+/* Fonts */
+@font-face {
+  font-family: "Roboto";
+  src: url("../fonts/roboto.woff2") format("woff2"),
+    url("../fonts/roboto.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: url("../fonts/robotomedium.woff2") format("woff2"),
+    url("../fonts/robotomedium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: url("../fonts/robotobold.woff2") format("woff2"),
+    url("../fonts/robotobold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+}
+
+/*Variabel*/
 :root {
   --background-basic:#EEEEEE;
   /*text*/
@@ -6,6 +31,8 @@
   --main-text-color:#283136;
   /*modal-label*/
   --modal-form-grey:#444444;
+  /*social-icons*/
+  --social-static:#E1E1E1;
   /*buttons*/
   --nav-color-static:#000000;
   --nav-color-hoveer:#FB565A;
@@ -25,128 +52,179 @@
   --basic-check-radio:#283136;
 }
 
-.main-index {
-  font-weight: 700; /* 9повторений */
-}
-
-/*index.html*/
-/*nav*/
-.nav {
-  font-weight: 500;
+/*Global*/
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto",Arial,sans-serif;
+  font-weight: 700;
   font-size: 16px;
-  line-height: 30px;
+  line-height: 24px;
+  color: var(--title-text-color);
+}
+ul {
+  list-style: none;
+}
+a {
+  color: var(--title-text-color);
+  text-decoration: none;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+.container {
+  width: 1160px;
+  margin: 0 auto;
+  height: auto;
+}
+.button {
+  width: 200px;
+  height: 50px;
+  color:#FFF;
+  background-color: var(--button-color-stacic);
+}
+.button:hover,
+.button:focus {
+  background-color: var(--button-color-hover);
 }
 
-/*sliderd block*/
-.slider-titel {
+
+.main-index /*это к главной странице*/{
+  font-weight: 700; /* 9повторений */
+  font-size: 16px;/*10 повторений*/
+  line-height: 24px;/*5 повторений*/
+}
+
+
+/*Main Navigation*/
+.main-navigation {
+  font-weight: 500;
+  line-height: 30px;
+  background-color: var(--background-basic);
+}
+.main-header-logo:hover,
+.main-header-logo:focus {
+  opacity: 0.7;
+}
+
+.site-navigation a:hover,
+.site-navigation a:focus,
+.cart-link:hover,
+.cart-link:focus {
+  color: var(--nav-color-hoveer);
+  border-bottom: 2px solid var(--nav-color-hoveer);
+}
+
+
+/*Advantages*/
+.advantages {
+  background-color: var(--background-basic);
+}
+.advantages-list h3 {
   font-weight: 500;
   font-size: 55px;
   line-height: 55px;
 }
-.slider-text {
+.advantages-item {
   font-weight: 400;
-  font-size: 16px;
-  line-height: 24px;
-}
-.button {
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 18px;
 }
 
-/* works*/
-.works-title {
-  font-weight: 700;
+
+/*Works*/
+
+.works-items h3 {
   font-size: 24px;
   line-height: 30px;
 }
-.button {
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 18px;
+.works-items{
+  font-weight: 400;
 }
+.button-green {
+  background-color: var(--button-green-stacic);
+}
+.button-green:hover,
+.button-green:focus {
+  background-color: var(--button-green-hover);
+}
+.button-yellow {
+  background-color: var(--button-yellow-static);
+}
+.button-yellow:hover,
+.button-yellow:focus {
+  background-color: var(--button-yellow-hover);
+}
+/*Description*/
 
-/*slogan-block*/
-.slogan-title {
+.description h3 {
   font-weight: 500;
   font-size: 45px;
   line-height: 45px;
 }
-.slogan-text {
+.description {
   font-weight: 400;
-  font-size: 16px;
-  line-height: 24px;
+}
+.description-bold {
+  font-weight: 700;
 }
 
-.slogan-works-title {
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 24px;
-}
-.sllogan-works-list {
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 24px;
-}
-.achievments-title {
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 24px;
-}
-.achivments-percent {
-  font-weight: 700;
+.acuracy-item {
   font-size: 45px;
-  line-height: 65px;
+  line-height: 64px;
 }
-.percent {
-  font-weight: 700;
+.parametrs-list {
+  font-weight: 400;
+  line-height: 18px;
+}
+.acuracy-item::after {
+  content: "%";
   font-size: 26px;
   line-height: 40px;
 }
-.achievments-text {
+.parametrs-item {
   font-weight: 400;
   font-size: 16px;
   line-height: 18px;
 }
 
-/*contacts us*/
-.contacts-title {
-  font-weight: 700;
+/*Partners-Logo*/
+.partners-item {
+  border: 2px solid var(--background-basic);
+}
+.partners-item a{
+  opacity: 0.2;
+}
+.partners-item a:hover,
+.partners-item a:focus {
+  opacity: 1;
+}
+
+/*Footer*/
+.footer-contacts h3{
   font-size: 18px;
   line-height: 30px;
 }
-
-.conatcts-text {
+.footer-contacts {
   font-weight: 400;
-  font-size: 16px;
   line-height: 18px;
 }
 
-/*benefits*/
-.benefits-title {
-  font-weight: 700;
+/*social-icon*/
+.social-button {
+  color: #FFF;
+  background-color: var(--social-static);
+}
+.social-button:hover,
+.social-button:focus {
+  background-color: var(--button-color-hover);
+}
+
+/*Benefits*/
+.footer-benefit h3 {
   font-size: 36px;
   line-height: 36px;
 }
-.benefits-text {
+.footer-benefit {
   font-weight: 400;
-  font-size: 16px;
   line-height: 22px;
-}
-
-/*modal*/
-.modal-title {
-  font-weight: 700;
-  font-size: 45px;
-  line-height: 53px;
-}
-.fields-title {
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 18px;
-}
-.field-text {
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 18px;
 }
