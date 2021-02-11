@@ -25,71 +25,83 @@
 
 /*Variabel*/
 :root {
-  --background-basic:#EEEEEE;
+  --background-basic: #EEEEEE;
   /*text*/
-  --title-text-color:#000000;
-  --main-text-color:#283136;
+  --title-text-color: #000000;
+  --main-text-color: #283136;
   /*modal-label*/
-  --modal-form-grey:#444444;
+  --modal-form-grey: #444444;
   /*social-icons*/
-  --social-static:#E1E1E1;
+  --social-static: #E1E1E1;
   /*buttons*/
-  --nav-color-static:#000000;
-  --nav-color-hoveer:#FB565A;
-  --button-color-stacic:#FB565A;
-  --button-color-hover:#E74246;
-  --button-color-click:#D7373B;
-  --button-green-stacic:#00CA74;
-  --button-green-hover:#00BC6C;
-  --button-green-click:#00AA62;
-  --button-yellow-static:#EFC849;
-  --button-yellow-hover:#EAB534;
-  --button-yellow-click:#E5A722;
+  --nav-color-static: #000000;
+  --nav-color-hoveer: #FB565A;
+  --button-color-stacic: #FB565A;
+  --button-color-hover: #E74246;
+  --button-color-click: #D7373B;
+  --button-green-stacic: #00CA74;
+  --button-green-hover: #00BC6C;
+  --button-green-click: #00AA62;
+  --button-yellow-static: #EFC849;
+  --button-yellow-hover: #EAB534;
+  --button-yellow-click: #E5A722;
   /*button grey and paggintion*/
-  --button-grey-hover:#DFDFDF;
-  --button-grey-click:#D5D5D5;
+  --button-grey-hover: #DFDFDF;
+  --button-grey-click: #D5D5D5;
   /*radio & checkbox*/
-  --basic-check-radio:#283136;
+  --basic-check-radio: #283136;
 }
 
 /*Global*/
 body {
+  min-width: 1160px;
   margin: 0;
   padding: 0;
-  font-family: "Roboto",Arial,sans-serif;
+  font-family: "Roboto", Arial, sans-serif;
   font-weight: 700;
   font-size: 16px;
   line-height: 24px;
   color: var(--title-text-color);
+
+  min-height: 100%;
+  display: grid;
+  grid-template-rows: min-content 1fr min-content;
+  align-content: start;
 }
+
 ul {
   list-style: none;
 }
+
 a {
   color: var(--title-text-color);
   text-decoration: none;
 }
+
 img {
   max-width: 100%;
   height: auto;
 }
+
 .container {
   width: 1160px;
   margin: 0 auto;
   height: auto;
 }
+
 .button {
   font-weight: 500;
   line-height: 18px;
   padding: 16px 54px;
   font: inherit;
   text-align: center;
-  color:#FFF;
+  color: #FFF;
   vertical-align: center;
   background-color: var(--button-color-stacic);
   border: none;
   border-radius: 3px;
 }
+
 .button:hover,
 .button:focus {
   cursor: pointer;
@@ -97,10 +109,16 @@ img {
 }
 
 
-.main-index /*это к главной странице*/{
-  font-weight: 700; /* 9повторений */
-  font-size: 16px;/*10 повторений*/
-  line-height: 24px;/*5 повторений*/
+.main-index
+
+/*это к главной странице*/
+  {
+  font-weight: 700;
+  /* 9повторений */
+  font-size: 16px;
+  /*10 повторений*/
+  line-height: 24px;
+  /*5 повторений*/
 }
 
 
@@ -110,10 +128,12 @@ img {
   line-height: 30px;
   background-color: var(--background-basic);
 }
+
 .main-header-logo:hover,
 .main-header-logo:focus {
   opacity: 0.7;
 }
+
 .site-navigation a:hover,
 .site-navigation a:focus,
 .cart-link:hover,
@@ -121,9 +141,11 @@ img {
   color: var(--nav-color-hoveer);
   border-bottom: 2px solid var(--nav-color-hoveer);
 }
+
 .cart-link {
   position: relative;
 }
+
 .cart-link::before {
   content: "";
 }
@@ -133,11 +155,13 @@ img {
 .advantages {
   background-color: var(--background-basic);
 }
+
 .advantages-list h3 {
   font-weight: 500;
   font-size: 55px;
   line-height: 55px;
 }
+
 .advantages-item {
   font-weight: 400;
 }
@@ -149,24 +173,30 @@ img {
   font-size: 24px;
   line-height: 30px;
 }
-.works-items{
+
+.works-items {
   font-weight: 400;
   padding: 20px;
 }
+
 .button-green {
   background-color: var(--button-green-stacic);
 }
+
 .button-green:hover,
 .button-green:focus {
   background-color: var(--button-green-hover);
 }
+
 .button-yellow {
   background-color: var(--button-yellow-static);
 }
+
 .button-yellow:hover,
 .button-yellow:focus {
   background-color: var(--button-yellow-hover);
 }
+
 /*Description*/
 
 .description h3 {
@@ -174,9 +204,11 @@ img {
   font-size: 45px;
   line-height: 45px;
 }
+
 .description {
   font-weight: 400;
 }
+
 .description-bold {
   font-weight: 700;
 }
@@ -185,15 +217,18 @@ img {
   font-size: 45px;
   line-height: 64px;
 }
+
 .parametrs-list {
   font-weight: 400;
   line-height: 18px;
 }
+
 .acuracy-item::after {
   content: "%";
   font-size: 26px;
   line-height: 40px;
 }
+
 .parametrs-item {
   font-weight: 400;
   font-size: 16px;
@@ -204,9 +239,11 @@ img {
 .partners-item {
   border: 2px solid var(--background-basic);
 }
-.partners-item a{
+
+.partners-item a {
   opacity: 0.2;
 }
+
 .partners-item a:hover,
 .partners-item a:focus {
   opacity: 1;
@@ -216,10 +253,12 @@ img {
 .contacts {
   margin: 50px 50px;
 }
-.footer-contacts h3{
+
+.footer-contacts h3 {
   font-size: 18px;
   line-height: 30px;
 }
+
 .footer-contacts {
   font-weight: 400;
   line-height: 18px;
@@ -230,6 +269,7 @@ img {
   color: #FFF;
   background-color: var(--social-static);
 }
+
 .social-button:hover,
 .social-button:focus {
   background-color: var(--button-color-hover);
@@ -240,6 +280,7 @@ img {
   font-size: 36px;
   line-height: 36px;
 }
+
 .footer-benefit {
   font-weight: 400;
   line-height: 22px;
@@ -262,6 +303,7 @@ img {
   font-size: 18px;
   line-height: 30px;
 }
+
 .filter-price {
   font-weight: 400;
   line-height: 22px;
@@ -279,30 +321,36 @@ img {
   color: var(--main-text-color);
   opacity: 1;
 }
+
 .button-grey {
   color: var(--title-text-color);
   background-color: var(--background-basic);
 }
+
 .button-grey:hover,
 .button-grey:focus {
   background-color: var(--button-grey-hover);
 }
 
-.cards-item h3{
+.cards-item h3 {
   font-size: 18px;
   line-height: 30px;
 }
+
 .cards-item h3:hover,
 .cards-item h3:focus {
   color: var(--button-color-stacic);
 }
+
 .cards-item {
   padding-bottom: 30px;
 }
+
 .card-text {
   font-weight: 400;
   line-height: 24px;
 }
+
 .btn-cards {
   font-weight: 500;
   line-height: 18px;
@@ -310,4 +358,43 @@ img {
 
 .pagination {
   padding: 5px 5px;
+}
+
+
+/*grid*/
+.page-body {
+  display: grid;
+  grid-template-rows: min-content 1fr min-content;
+  align-content: start;
+}
+
+.main-header {
+  margin-bottom: 70px;
+  outline: 5px solid greenyellow;
+  outline-offset: -5px;
+}
+
+.main-footer {
+  outline: 5px solid red;
+  outline-offset: -5px;
+}
+
+.main-header-logo {
+  outline: 5px solid #E5A722;
+  outline-offset: -5px;
+}
+
+.site-navigation {
+  outline: 5px solid green;
+  outline-offset: -5px;
+}
+
+.cart-link {
+  outline: 5px solid orchid;
+  outline-offset: -5px;
+}
+
+.main-navigation {
+  display: grid;
+  grid-area: "main-header-logo site-navigation cart-link";
 }
