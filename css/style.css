@@ -396,7 +396,6 @@ img {
 /*price-block*/
 .catalog-title {
   display: grid;
-  width: 1157px;
   grid-template-rows: 1fr;
   justify-content: center;
   background-color: var(--basic-grey);
