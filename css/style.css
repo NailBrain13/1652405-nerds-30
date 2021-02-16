@@ -25,29 +25,173 @@
 
 /*Variabel*/
 :root {
-  --background-basic: #EEEEEE;
-  /*text*/
-  --title-text-color: #000000;
-  --main-text-color: #283136;
-  /*modal-label*/
-  --modal-form-grey: #444444;
-  /*social-icons*/
-  --social-static: #E1E1E1;
-  /*buttons*/
-  --nav-color-static: #000000;
-  --nav-color-hoveer: #FB565A;
-  --button-color-stacic: #FB565A;
-  --button-color-hover: #E74246;
-  --button-color-click: #D7373B;
-  --button-green-stacic: #00CA74;
-  --button-green-hover: #00BC6C;
-  --button-green-click: #00AA62;
-  --button-yellow-static: #EFC849;
-  --button-yellow-hover: #EAB534;
-  --button-yellow-click: #E5A722;
-  /*button grey and paggintion*/
-  --button-grey-hover: #DFDFDF;
-  --button-grey-click: #D5D5D5;
-  /*radio & checkbox*/
-  --basic-check-radio: #283136;
+
+--color-basic-grey:#EEEEEE;
+
+/*text*/
+--color-titel-basic:#000000;
+--color-content-basic:#283136;
+--color-contacts-only:#666666;
+--color-basic-white:#FFFFFF;
+--color-modal-content:#444444;
+
+/*chechbox&radio-btn*/
+--color-catalog-filter:#283136;
+
+/*buttons*/
+--basic-red-btn:#FB565A;
+--hover-red:#E74246;
+--click-red:#D7373B;
+
+--basick-green-btn:#00CA74;
+--hover-green:#00BC6C;
+--click-green:#00AA62;
+
+--basick-yellow-btn:#EFC849;
+--hover-yellow:#EAB534;
+--click-yellow:#E5A722;
+
+/*pagination*/
+--pagination-hover-btn:#DFDFDF;
+--pagination-active-btn:#D5D5D5;
+--pagination-border-actv:#DBDBDB;
+
+/*social icon*/
+--social-icon-basic:#E1E1E1;
+
+/*modal*/
+--modal-boredr-content:#D7DCDE;
 }
+
+/*Button*/
+button {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 18px;
+}
+/*Navigation*/
+nav {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 30px;
+}
+/*Slider*/
+.slider-titel {
+  font-weight: 500;
+  font-size: 55px;
+  line-height: 55px;
+}
+.slider-content {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+/*Works*/
+.works-titel {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 30px;
+}
+.works-content {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+/*Studio description(описание студии)*/
+.description-titel {
+  font-weight: 500;
+  font-size: 45px;
+  line-height: 45px;
+}
+.description-content {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+}
+.description-sub-titel {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+}
+.description-tab-titel {
+  font-weight: 700;
+  font-size: 45px;
+  line-height: 64px;
+}
+.description-tab-titel-percent {
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 40px;
+}
+.description-tab-content {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+}
+
+/*Contacts*/
+.contacts-titel {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 30px;
+}
+.contacts-content {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+}
+
+/*Benefits*/
+.benefits-titel {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 36px;
+}
+.benefit-content {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+}
+
+/*Modal*/
+.modal-form-titel {
+  font-weight: 700;
+  font-size: 45px;
+  line-height: 53px;
+}
+.modal-form-subtitel {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 18px;
+}
+.moda-form-content {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+}
+
+/*Catalog*/
+.catalog-titel {
+  font-weight: 500;
+  font-size: 55px;
+  line-height: 55px;
+}
+.catalog-sub-titel {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 30px;
+}
+.catalog-price-filter {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+}
+.catalog-price-sort {
+  font-weight: 400;
+  font-style: 14px;
+  line-height: 18px;
+}
+
+/*Стили для основной страницы*/
