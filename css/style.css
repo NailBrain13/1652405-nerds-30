@@ -41,20 +41,20 @@
 /*buttons*/
 --basic-red-btn:#FB565A;
 --hover-red:#E74246;
---click-red:#D7373B;
+--active-red:#D7373B;
 
 --basick-green-btn:#00CA74;
 --hover-green:#00BC6C;
---click-green:#00AA62;
+--active-green:#00AA62;
 
 --basick-yellow-btn:#EFC849;
 --hover-yellow:#EAB534;
---click-yellow:#E5A722;
+--active-yellow:#E5A722;
 
 /*pagination*/
 --pagination-hover-btn:#DFDFDF;
 --pagination-active-btn:#D5D5D5;
---pagination-border-actv:#DBDBDB;
+--pagination-border-active:#DBDBDB;
 
 /*social icon*/
 --social-icon-basic:#E1E1E1;
