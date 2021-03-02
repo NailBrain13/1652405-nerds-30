@@ -687,6 +687,7 @@ img {
 /*Modal*/
 
 .modal-feedback {
+  display: none;
   position: fixed;
   width: 960px;
   height: 590px;
