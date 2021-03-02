@@ -574,6 +574,7 @@ img {
 /*Footer*/
 
 .map-wrap {
+  position: relative;
   height: 416px;
   background-image: url("/img/map/map.png");
   background-repeat: no-repeat;
@@ -588,14 +589,13 @@ img {
 
 
 .contacts {
-  position: relative;
+  position: absolute;
   box-sizing: border-box;
   background-color: var(--color-basic-white);
   height: 308px;
   padding: 10px 50px;
   width: 319px;
-  bottom: 370px;
-  overflow: auto;
+  top: 53px;
 }
 
 
