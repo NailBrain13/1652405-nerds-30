@@ -61,6 +61,7 @@
 
 /*modal*/
 --modal-boredr-content:#D7DCDE;
+--modal-hover-contet-box:#B4B9BB;
 }
 
 
@@ -624,6 +625,8 @@ img {
   width: 180px;
 }
 
+/*Social*/
+
 .footer-social {
   display: grid;
   grid-template-columns: auto 1fr;
@@ -680,3 +683,121 @@ img {
   margin-top: 10px;
   color: var(--color-modal-content);
 }
+
+/*Modal*/
+
+.modal-feedback {
+  position: fixed;
+  width: 960px;
+  height: 590px;
+  right: 0;
+  left: 0;
+  margin: 0 auto;
+  top: 100px;
+  bottom: 180px;
+  padding: 65px 100px;
+  box-sizing: border-box;
+  background-color: var(--color-basic-white);
+  box-shadow: 0 0px 40px rgba(127, 129, 127, 0.7);
+  z-index: 100;
+}
+
+.feedback-form-wrap {
+  display: grid;
+  grid-template-columns: 360px 360px;
+  column-gap: 40px;
+  row-gap: 34px;
+  margin-bottom: 45px;
+}
+
+.modal-feedback h2 {
+  font-weight: 700;
+  font-size: 45px;
+  line-height: 53px;
+  margin-top: 0;
+  margin-bottom: 38px;
+}
+
+.feedback-label {
+  font-weight: 700;
+  line-height: 18px;
+}
+
+.feedback-form input[type="text"],
+.feedback-form input[type="email"],
+textarea {
+  font-weight: 500;
+  line-height: 18px;
+  color: var(--color-modal-content);
+  border: 2px solid var(--modal-boredr-content);
+  border-radius: 3px;
+  opacity: 0.5;
+  outline: none;
+  margin-top: 10px;
+}
+
+.feedback-form input {
+  width: 340px;
+  height: 44px;
+  padding-left: 14px;
+}
+
+.feedback-form textarea {
+  width: 740px;
+  min-height: 97px;
+  padding-top: 14px;
+  padding-left: 15px;
+  resize: vertical;
+}
+
+.feedback-form input:hover,
+textarea:hover {
+  border: 2px solid var(--modal-hover-contet-box);
+}
+
+.feedback-form input:focus,
+textarea:focus {
+  color: var(--color-titel-basic);
+  border: 2px solid var(--color-titel-basic);
+  opacity: 1;
+}
+
+.feedback-form input:invalid,
+textarea:invalid {
+  border: 2px solid var(--hover-red);
+  color: var(--hover-red);
+  opacity: 1;
+}
+
+.feedback-button {
+  margin-top: -5px;
+  width: 260px;
+  height: 50px;
+  cursor: pointer;
+}
+
+.modal-close {
+  position: absolute;
+  top: 80px;
+  right: 90px;
+  width: 21px;
+  height: 21px;
+  border: 0;
+  cursor: pointer;
+  background-color: var(--color-basic-white);
+  background-image: url("/img/close-cross.svg");
+  opacity: 0.3;
+}
+
+.modal-close:hover,
+.modal-close:focus {
+  opacity: 1;
+}
+
+.modal-close:active {
+  opacity: 0.1;
+}
+
+
+
+
