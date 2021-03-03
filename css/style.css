@@ -831,13 +831,14 @@ textarea:invalid {
   padding-top: 55px;
 }
 
+/*Sort-field*/
+
 .sort-container {
   display: flex;
   justify-content: space-between;
   align-items: center;
   list-style: none;
   text-transform: uppercase;
-  grid-column: 2/ -1;
   margin-bottom: 48px;
 }
 
@@ -852,8 +853,7 @@ textarea:invalid {
 .sort-selector-list {
   width: 360px;
   display: grid;
-  grid-template-columns: 1fr 40px;
-  justify-content: space-between;
+  grid-template-columns: 1fr 42px;
 }
 
 .sort-list {
