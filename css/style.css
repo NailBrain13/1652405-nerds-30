@@ -586,7 +586,6 @@ img {
   background-image: url("/img/map/map.png");
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: 50% 0px;
 }
 
 .map-wrap iframe {
@@ -595,13 +594,13 @@ img {
 }
 
 .contacts {
-  width: 319px;
-  height: 308px;
+  width: 220px;
+  height: 290px;
   position: absolute;
   top: 53px;
-  box-sizing: border-box;
   background-color: var(--color-basic-white);
   padding: 10px 50px;
+  overflow: auto;
 }
 
 .contact-tittle {
@@ -689,7 +688,7 @@ img {
 .benefits p:last-child {
   line-height: 22px;
   margin-top: 10px;
-  color: var(--color-modal-content);
+  color: var(--modal-boredr-content);
 }
 
 /*Modal*/
@@ -703,12 +702,11 @@ img {
   left: 0;
   margin: 0 auto;
   top: 100px;
-  bottom: 180px;
   padding: 65px 100px;
   box-sizing: border-box;
   background-color: var(--color-basic-white);
   box-shadow: 0 0px 40px rgba(127, 129, 127, 0.7);
-  z-index: 100;
+  overflow: auto;
 }
 
 .feedback-form-wrap {
@@ -814,7 +812,7 @@ textarea:invalid {
 
 /*Main-catalog*/
 
-.page-title {
+.page-catalog-title {
   font-weight: 500;
   font-size: 55px;
   line-height: 55px;
@@ -822,7 +820,6 @@ textarea:invalid {
   background-color: var(--color-basic-grey);
   padding-top: 78px;
   padding-bottom: 105px;
-  margin: 0;
 }
 
 .page-catalog {
@@ -848,7 +845,6 @@ textarea:invalid {
   font-weight: 700;
   font-size: 18px;
   line-height: 30px;
-  color: var(--color-titel-basic);
   margin: 0;
 }
 
@@ -869,7 +865,7 @@ textarea:invalid {
   font-weight: 400;
   font-size: 14px;
   line-height: 18px;
-  color: var(--basic-title);
+  color: inherit;
   opacity: 0.3;
   margin-right: 27px;
 }
@@ -896,7 +892,6 @@ textarea:invalid {
 }
 
 .sort-button {
-  color: var(--sort-btn);
   opacity: 0.2;
 }
 
@@ -907,7 +902,6 @@ textarea:invalid {
 
 .sort-button:active,
 .sort-button-select {
-  color: var(--color-titel-basic);
   opacity: 1;
 }
 
@@ -1175,7 +1169,6 @@ grid-column: 2;
 .catalog-list img:hover {
   border-bottom-right-radius: 5px;
   border-bottom-left-radius: 5px;
-  background: var(--catalog-button-hover);
 }
 
 .catalog-item:hover {
@@ -1198,7 +1191,7 @@ grid-column: 2;
   font-size: 18px;
   line-height: 30px;
   text-transform: uppercase;
-  color: var(--basic-title);
+  color: inherit;
 }
 
 .catalog-item-title:hover,
@@ -1219,13 +1212,6 @@ grid-column: 2;
   margin-bottom: 33px;
 }
 
-.catalog-item-info {
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 18px;
-  color: var(--color-contacts-only);
-}
-
 .button-price {
   color: var(--color-basic-white);
   background-color: var(--basic-red-btn);
@@ -1244,8 +1230,6 @@ grid-column: 2;
   background-color: var(--active-red);
   box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
 }
-
-
 
 /*Pagination-list*/
 
