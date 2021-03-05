@@ -25,9 +25,7 @@
 
 /*Variabel*/
 :root {
-
 --color-basic-grey:#EEEEEE;
-
 /*text*/
 --color-titel-basic:#000000;
 --color-content-basic:#283136;
@@ -71,7 +69,6 @@
 --modal-boredr-content:#D7DCDE;
 --modal-hover-contet-box:#B4B9BB;
 }
-
 
 /*Global*/
 .page-body {
@@ -122,6 +119,7 @@ img {
 }
 
 /*Navigation*/
+
 .main-header {
   font-weight: 500;
   line-height: 30px;
@@ -151,7 +149,6 @@ img {
   opacity: 0.3;
 }
 
-
 .site-navigation {
   width: 437px;
   display: flex;
@@ -170,7 +167,6 @@ img {
 .site-navigation li:last-child {
   margin-right: 0;
 }
-
 
 .user-nav {
   max-width: 115px;
@@ -214,19 +210,9 @@ img {
   padding-bottom: 10px;
   border-bottom: 2px solid var(--basic-red-btn);
 }
-/*
-.current::after {
-  content: ""
-  position: absolute;
-  width: 100%;
-  top: 37px;
-  left: 0px;
-  height: 2px;
-  background-color: var(--basic-red-btn);
-}
-*/
 
 /*Features-slider*/
+
 .features-wrapper {
   background-color: var(--color-basic-grey);
   margin-bottom: 80px;
@@ -538,6 +524,7 @@ img {
 }
 
 /*Partners-(clients?)*/
+
 .partners {
   padding-top: 15px;
   padding-bottom: 45px;
@@ -591,7 +578,6 @@ img {
   opacity: 0.1;
 }
 
-
 /*Footer*/
 
 .map-wrap {
@@ -608,7 +594,6 @@ img {
   height: 416px;
 }
 
-
 .contacts {
   width: 319px;
   height: 308px;
@@ -618,7 +603,6 @@ img {
   background-color: var(--color-basic-white);
   padding: 10px 50px;
 }
-
 
 .contact-tittle {
   font-weight: 700;
@@ -828,7 +812,6 @@ textarea:invalid {
   opacity: 0.1;
 }
 
-
 /*Main-catalog*/
 
 .page-title {
@@ -1010,10 +993,11 @@ textarea:invalid {
   justify-content: space-between;
 }
 
-.price-controls label {
+.price-controls {
   font-weight: 400;
   font-size: 16px;
   line-height: 22px;
+  color: var(--color-content-basic);
   text-transform: uppercase;
 }
 
@@ -1036,6 +1020,7 @@ textarea:invalid {
 }
 
 .filter-option {
+  color: var(--color-content-basic);
   margin-bottom: 14px;
   padding-left: 36px;
 }
@@ -1230,8 +1215,7 @@ grid-column: 2;
   font-weight: 400;
   line-height: 18px;
   color: var(--color-contacts-only);
-  margin-top: 12px;
-  padding-top: 2px;
+  margin-top: 11px;
   margin-bottom: 33px;
 }
 
