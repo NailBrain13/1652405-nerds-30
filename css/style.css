@@ -251,6 +251,14 @@ img {
   line-height: 24px;
 }
 
+.slide {
+  display: none;
+}
+
+.slide-current {
+  display: block;
+}
+
 .feature-slide-2 .slide-title,
 .feature-slide-3 .slide-title {
   margin: 0 0 37px 0;
@@ -263,10 +271,6 @@ img {
 .features-slider .slide-button {
   padding: 16px 54px;
   margin-bottom: 80px;
-}
-
-.slide {
-  display: none;
 }
 
 .feature-slide-1 {
@@ -289,8 +293,8 @@ img {
   position: absolute;
   display: flex;
   width: 88px;
-  bottom: 96px;
-  left: 555px;
+  bottom: 98px;
+  left: 556px;
   justify-content: space-between;
 }
 
@@ -305,7 +309,7 @@ img {
   cursor: pointer;
 }
 .switch-slider .active {
-  background-image: url("/img/slider/Ellipse-on.svg");
+  background-image: url("/img/slider/Ellipse-slider.svg");
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -1283,3 +1287,52 @@ grid-column: 2;
   background-color: var(--pagination-active-btn);
   color: var(--color-basic-grey);
 }
+
+/*JS*/
+.modal-show {
+  display: block;
+}
+
+.catalog-link {
+  min-height: 700px;
+  display: grid;
+  grid-template-columns: auto auto;
+  padding: 20px 20px;
+  background-color: var(--color-basic-grey);
+}
+
+.left {
+  width: 700px;
+  height: 500px;
+  background-color: var(--color-basic-white);
+  border: 2px solid var(--active-green);
+  border-radius: 50px;
+}
+
+.link-flex {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  list-style: none;
+}
+.link-flex:last-child {
+  margin-right: 80px;
+}
+.link-flex li {
+  width: 100px;
+  height: 70px;
+  background-color: var(--sort-btn);
+  border: 6px solid var(--basick-yellow-btn);
+  border-radius: 20px;
+  margin-bottom: 70px;
+}
+
+.right {
+  width: 300px;
+  height: 200px;
+  background-color: var(--color-titel-basic);
+  border: 10px solid var(--active-red);
+  border-radius: 20px;
+  border-style: groove;
+}
+
