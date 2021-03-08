@@ -309,7 +309,7 @@ img {
   cursor: pointer;
 }
 .switch-slider .active {
-  background-image: url("/img/slider/ellipse-slider.svg");
+  background-image: url("/img/slider/switch-slider.svg");
   background-repeat: no-repeat;
   background-position: center;
 }
