@@ -68,6 +68,10 @@
 /*modal*/
 --modal-boredr-content:#D7DCDE;
 --modal-hover-contet-box:#B4B9BB;
+
+/*box-shadow*/
+--box-shadow:rgba(0,1,1,0.1);
+
 }
 
 /*Global*/
@@ -337,6 +341,7 @@ img {
 }
 .button:active {
   background-color: var(--active-red);
+  box-shadow: inset 0px 3px 0px var(--box-shadow);
 }
 
 /*Services*/
@@ -673,6 +678,7 @@ img {
 .social-button:active {
   background-color: var(--active-red);
   fill-opacity: 0.3;
+  box-shadow: inset 0px 3px 0px var(--box-shadow);
 }
 
 /*Footer-benefit*/
@@ -1235,7 +1241,7 @@ grid-column: 2;
 
 .button-price:active {
   background-color: var(--active-red);
-  box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
+  box-shadow: inset 0px 3px 0px var(--box-shadow);
 }
 
 /*Pagination-list*/
@@ -1287,7 +1293,8 @@ grid-column: 2;
 .pagination-button:active,
 .pagination-button-select:active {
   background-color: var(--pagination-active-btn);
-  color: var(--color-basic-grey);
+  color: var(--color-titel-basic);
+  box-shadow: inset 0px 3px 0px var(--box-shadow);
 }
 
 /*JS*/
