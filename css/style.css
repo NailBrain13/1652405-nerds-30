@@ -355,7 +355,10 @@ img {
   background-color: var(--active-red);
   box-shadow: inset 0px 3px 0px var(--box-shadow-btn);
 }
-
+.slider-button {
+  min-height: 30px;
+  height: max-content;
+}
 /*Services*/
 
 .services {
@@ -397,6 +400,8 @@ img {
   width: 80px;
   height: 20px;
   padding: 15px 40px;
+  height: max-content;
+  width: fit-content;
 }
 
 .services-item-web-site {
@@ -657,6 +662,8 @@ img {
 
 .contacts-button {
   width: 180px;
+  min-height: 30px;
+  height: auto;
 }
 
 /*Social*/
@@ -736,7 +743,7 @@ img {
   box-sizing: border-box;
   background-color: var(--color-basic-white);
   box-shadow: 0 20px 40px var(--modal-shadow);
-  overflow: auto;
+  overflow: hidden;
 }
 
 .feedback-form-wrap {
@@ -815,7 +822,9 @@ textarea:invalid {
   width: 260px;
   cursor: pointer;
   padding-top: 15px;
-  padding-bottom: 35px;
+  padding-bottom: 15px;
+  min-height: 40px;
+  height: auto;
 }
 
 .modal-close {
@@ -1118,9 +1127,10 @@ textarea:invalid {
 
 .filter-button {
   width: 100%;
+  height: auto;
   color: var(--color-titel-basic);
   background-color: var(--color-basic-grey);
-  padding-bottom: 34px;
+  padding-bottom: 15px;
   cursor: pointer;
 }
 
@@ -1187,11 +1197,13 @@ textarea:invalid {
 .catalog-item-discription {
   position: absolute;
   box-sizing: border-box;
-  min-height: 230px;
-  max-height: 230px;
+  min-height: 231px;
+  max-height: 580px;
   width: 360px;
   bottom: 0;
-  padding: 25px 20px;
+  padding-left: 18px;
+  padding-right: 18px;
+  padding-bottom: 45px;
   text-align: center;
   background-color: var(--color-basic-grey);
   border-bottom-right-radius: 5px;
@@ -1218,6 +1230,7 @@ textarea:invalid {
 
 .catalog-item-discription h3 {
   margin: 0;
+  padding-top: 25px;
 }
 
 .catalog-item-title {
@@ -1239,11 +1252,11 @@ textarea:invalid {
 }
 
 .catalog-item-info {
+  max-height: 373px;
   font-weight: 400;
   line-height: 18px;
   color: var(--color-contacts-only);
-  margin-top: 11px;
-  margin-bottom: 33px;
+  overflow: scroll;
 }
 
 .button-price {
@@ -1253,6 +1266,7 @@ textarea:invalid {
   border-radius: 3px;
   padding: 16px 73px;
   cursor: grabbing;
+  margin-top: 14px;
 }
 
 .button-price:hover,
@@ -1268,7 +1282,7 @@ textarea:invalid {
 /*Pagination-list*/
 
 .paginatoin {
-  margin-bottom: 58px;
+  margin-bottom: 48px;
 }
 
 .pagination-list {
@@ -1281,26 +1295,33 @@ textarea:invalid {
   margin: 0;
 }
 
+.pagination-list:last-child {
+  margin-right: 10px;
+}
+
 .pagination-item {
   margin-right: 11px;
+  margin-bottom: 10px;
 }
 
 .pagination-button {
-  width: 10px;
-  height: 30px;
+  min-width: 10px;
+  width: auto;
+  min-height: 28px;
+  height: auto;
   color: var(--color-titel-basic);
   background-color: var(--color-basic-grey);
 }
 
 .pagination-button-select {
-  height: 17px;
+  height: auto;
   background-color: var(--color-basic-white);
   border: 3px solid var(--pagination-brdr);
-  padding: 13px 17px;
+  padding: 11px 17px 3px 17px;
 }
 
 .pagination-next {
-  width: 220px;
+  min-width: 220px;
 }
 
 .pagination-button:hover,
@@ -1311,13 +1332,15 @@ textarea:invalid {
   color: var(--color-basic-white);
 }
 
-.pagination-button:active,
-.pagination-button-select:active {
+.pagination-button:active {
   background-color: var(--pagination-active-btn);
   color: var(--color-titel-basic);
   box-shadow: inset 0px 3px 0px var(--box-shadow-btn);
 }
-
+.pagination-button-select:active {
+  border: none;
+  padding: 13px 20px 6px 20px;
+}
 /*JS*/
 .modal-show {
   display: block;
@@ -1336,7 +1359,7 @@ textarea:invalid {
   width: 600px;
   height: 300px;
   background-color: var(--basick-yellow-btn);
-  border: 2px solid black;
+  border: 2px solid var(--color-titel-basic);
   border-radius: 10px;
 }
 
@@ -1345,8 +1368,8 @@ textarea:invalid {
   grid-row: 1/3;
   width: 400px;
   height: auto;
-  background-color: white;
-  border: 2px solid black;
+  background-color:var(--color-basic-white);
+  border: 2px solid var(--color-titel-basic);
 }
 
 .left img {
