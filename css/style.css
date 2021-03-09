@@ -49,6 +49,8 @@
   --hover-yellow: #EAB534;
   --active-yellow: #E5A722;
 
+  --active-white-text:rgba(255, 255, 255, 0.3);
+  --active-black-text:rgba(0, 0, 0, 0.3);
   /*Price range */
   --price-range-color: #D7DCDF;
   --price-range-color-actv: #00CA74;
@@ -359,6 +361,9 @@ img {
   min-height: 30px;
   height: max-content;
 }
+.slider-button:active {
+  color: var(--active-white-text);
+}
 /*Services*/
 
 .services {
@@ -402,6 +407,10 @@ img {
   padding: 15px 40px;
   height: max-content;
   width: fit-content;
+}
+
+.button-services:active {
+  color: var(--active-white-text);
 }
 
 .services-item-web-site {
@@ -1141,6 +1150,7 @@ textarea:invalid {
 
 .filter-button:active {
   background-color: var(--pagination-active-btn);
+  color: var(--active-black-text);
 }
 
 /*Catalog-cards*/
@@ -1334,7 +1344,7 @@ textarea:invalid {
 
 .pagination-button:active {
   background-color: var(--pagination-active-btn);
-  color: var(--color-titel-basic);
+  color: var(--active-black-text);
   box-shadow: inset 0px 3px 0px var(--box-shadow-btn);
 }
 .pagination-button-select:active {
