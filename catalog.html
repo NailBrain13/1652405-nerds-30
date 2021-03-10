@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <title>"Каталог готовых шаблонов."</title>
   <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/style.min.css">
+  <link rel="stylesheet" href="css/style.css">
   <link rel="icon" href="favicon.ico">
 </head>
 
@@ -86,7 +86,7 @@
       </section>
       <section class="filters">
         <h2 class="visually-hidden">Параметры фильра</h2>
-        <form class="filter-form" method="GET" action="https://echo.htmlacademy.ru">
+        <form class="filter-form" method="GET" action="https://echo.htmlacademy.ru" target="_blank">
           <fieldset>
             <legend>Стоимость:</legend>
             <div class="range-filter">
@@ -111,19 +111,19 @@
             <legend>Сетка:</legend>
             <ul>
               <li class="filter-option filter-radio">
-                <input class="filter-input-radio visually-hidden" type="radio" name="site-grid" value="adaptive"
-                  id="filter-adaptive" checked>
-                <label for="filter-adaptive" tabindex="0">Адаптивная</label>
+                <input class="visually-hidden filter-input-radio filter-input" type="radio" name="site-grid"
+                  value="adaptive" id="filter-adaptive" checked>
+                <label for="filter-adaptive">Адаптивная</label>
               </li>
               <li class="filter-option filter-radio">
-                <input class="filter-input-radio visually-hidden" type="radio" name="site-grid" value="fixed"
-                  id="filter-fixed">
-                <label for="filter-fixed" tabindex="0">Фиксированная</label>
+                <input class="visually-hidden filter-input-radio filter-input" type="radio" name="site-grid"
+                  value="fixed" id="filter-fixed">
+                <label for="filter-fixed">Фиксированная</label>
               </li>
               <li class="filter-option filter-radio">
-                <input class="filter-input-radio visually-hidden" type="radio" name="site-grid" value="flex"
-                  id="filter-flex">
-                <label for="filter-flex" tabindex="0">Резиновая</label>
+                <input class="visually-hidden filter-input-radio filter-input" type="radio" name="site-grid"
+                  value="flex" id="filter-flex" disabled>
+                <label for="filter-flex">Резиновая</label>
               </li>
             </ul>
           </fieldset>
@@ -131,28 +131,34 @@
             <legend>Особенности:</legend>
             <ul>
               <li class="filter-option filter-checkbox">
-                <input class="filter-input-checkbox visually-hidden" type="checkbox" name="slider" id="filter-slider"
-                  checked>
-                <label for="filter-slider" tabindex="0">Слайдер</label>
+                <input class="visually-hidden filter-input-checkbox filter-input" type="checkbox" name="slider"
+                  id="filter-slider" checked disabled>
+                <label for="filter-slider">Слайдер</label>
               </li>
               <li class="filter-option filter-checkbox">
-                <input class="filter-input-checkbox visually-hidden" type="checkbox" name="advantages"
+                <input class="visually-hidden filter-input-checkbox filter-input" type="checkbox" name="advantages"
                   id="filter-advantages">
-                <label for="filter-advantages" tabindex="0">Блок преимуществ</label>
+                <label for="filter-advantages">Блок преимуществ</label>
               </li>
               <li class="filter-option filter-checkbox">
-                <input class="filter-input-checkbox visually-hidden" type="checkbox" name="news" id="filter-news"
-                  checked>
-                <label for="filter-news" tabindex="0">Новости</label>
+                <input class="visually-hidden filter-input-checkbox filter-input" type="checkbox" name="news"
+                  id="filter-news" checked>
+                <label for="filter-news">Новости</label>
               </li>
               <li class="filter-option filter-checkbox">
-                <input class="filter-input-checkbox visually-hidden" type="checkbox" name="gallery" id="filter-gallery">
-                <label for="filter-gallery" tabindex="0">Галерея</label>
+                <input class="visually-hidden filter-input-checkbox filter-input" type="checkbox" name="gallery"
+                  id="filter-gallery" disabled>
+                <label for="filter-gallery">Галерея</label>
               </li>
               <li class="filter-option filter-checkbox">
-                <input class="filter-input-checkbox visually-hidden" type="checkbox" name="basket" id="filter-basket">
-                <label for="filter-basket" tabindex="0">Корзина</label>
+                <input class="visually-hidden filter-input-checkbox filter-input" type="checkbox" name="basket"
+                  id="filter-basket">
+                <label for="filter-basket">Корзина</label>
               </li>
+
+
+
+
             </ul>
           </fieldset>
           <button class="button filter-button" type="submit">Показать</button>
@@ -173,7 +179,7 @@
               <p class="catalog-item-info">
                 Информационный сайт<br>для туристов
               </p>
-              <button class="button-price" type="button" aria-label="купить за">
+              <button class="button-price" type="button">
                 9 900 &#8381;
               </button>
             </div>
