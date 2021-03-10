@@ -1249,8 +1249,10 @@ textarea:invalid {
 }
 
 .catalog-item-discription h3 {
+  max-height: 35px;
   margin: 0;
   padding-top: 25px;
+  overflow: auto;
 }
 
 .catalog-item-title {
