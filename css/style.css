@@ -815,7 +815,7 @@ textarea:hover {
 
 .feedback-form input:focus,
 textarea:focus {
-  color: var(--color-titel-basic);
+  color: var(--color-modal-content);
   border: 2px solid var(--color-titel-basic);
   opacity: 1;
 }
@@ -1349,7 +1349,7 @@ textarea:invalid {
 .pagination-button:focus,
 .pagination-button-select:focus {
   background-color: var(--pagination-hover-btn);
-  color: var(--color-basic-white);
+  color: var(--color-titel-basic);
 }
 
 .pagination-button:active {
