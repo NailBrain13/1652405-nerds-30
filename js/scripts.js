@@ -31,11 +31,9 @@ modalClose.addEventListener("click", function (evt) {
 formSend.addEventListener("submit", function (evt) {
   if (!nameUser.value || !emailUser.value || !userText.value) {
     evt.preventDefault();
-    modalPopup.classList.add("modal-error");
-  } else {
-    evt.preventDefault();
     modalPopup.classList.remove("modal-error");
-    modalPopup.classList.remove("modal-show");
+    modalPopup.offsetWidth = modalPopup.offsetWidth;
+    modalPopup.classList.add("modal-error");
   }
 });
 
